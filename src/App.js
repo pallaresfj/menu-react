@@ -9,16 +9,16 @@ import { Container } from 'react-bootstrap';
 
 function App() {
 
-  const [ compDinamico, setCompDinamico ] = useState(<Componente1 />);
+  const [compDinamico, setCompDinamico] = useState(<Componente1 />);
 
   const onOptionClicked = function (evt) {
     evt.preventDefault();
-    if (evt.target.name==="comp1") {
+    if (evt.target.name === "comp1") {
       setCompDinamico(<Componente1 />);
-    }else {
-      if (evt.target.name==="comp2") { setCompDinamico(<Componente2 />); }
-      else { 
-        if (evt.target.name==="comp3") {setCompDinamico(<Componente3 />);}
+    } else {
+      if (evt.target.name === "comp2") { setCompDinamico(<Componente2 />); }
+      else {
+        if (evt.target.name === "comp3") { setCompDinamico(<Componente3 />); }
         else {
           setCompDinamico(<Componente4 />);
         }
@@ -29,11 +29,11 @@ function App() {
 
   return (
     <Fragment>
-      <MenuBar onOptionClicked={ onOptionClicked } />
+      <MenuBar onOptionClicked={onOptionClicked} />
       <Container>
         <div className="card mt-5">
           <div className="card-body">
-            { compDinamico }
+            {compDinamico}
           </div>
         </div>
       </Container>

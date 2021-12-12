@@ -1,6 +1,6 @@
 import { Navbar, NavDropdown, Container, Nav } from 'react-bootstrap';
 
-const MenuBar = function({ onOptionClicked }) {
+const MenuBar = function ({ onOptionClicked }) {
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
             <Container fluid>
@@ -17,7 +17,7 @@ const MenuBar = function({ onOptionClicked }) {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#Componente4" name="comp4" onClick={onOptionClicked}>Componente 4</NavDropdown.Item>
                         </NavDropdown>
-                    </Nav>                    
+                    </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
